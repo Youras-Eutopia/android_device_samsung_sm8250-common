@@ -149,9 +149,6 @@ vendor.display.idle_time=0
 vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
 
-# Filesystem
-fs_mgr.overlayfs.prefer_cache_backing_storage=true
-
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
@@ -164,7 +161,6 @@ ro.incremental.enable=true
 # Keystore
 ro.hardware.keystore=mdfpp
 ro.hardware.keystore_desede=true
-ro.security.keystore.keytype=sakv2,gak,sgak
 
 # Media
 debug.stagefright.omx_default_rank=0
