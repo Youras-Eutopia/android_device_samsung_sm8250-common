@@ -1,3 +1,8 @@
+//
+// SPDX-FileCopyrightText: 2018 The Android Open Source Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 filegroup {
     name: "android.hardware.audio-impl_samsung-sm8250_srcs",
     srcs: [
