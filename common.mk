@@ -291,8 +291,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
-    Tag \
-    libchrome.vendor
+    Tag
 
 # NFC configs
 PRODUCT_COPY_FILES += \
