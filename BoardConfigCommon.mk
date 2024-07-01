@@ -171,9 +171,6 @@ TARGET_KEYMASTER_VARIANT := samsung
 # Include
 $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_samsung_sm8250
-
 # HIDL manifests
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/configs/framework_compatibility_matrix.xml \
