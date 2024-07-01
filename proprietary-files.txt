@@ -661,7 +661,6 @@ vendor/firmware/cs40l25a_cal.wmfw
 vendor/firmware/cs40l25a_clab.bin
 vendor/firmware/cs40l25a_clab.wmfw
 vendor/firmware/cs40l25a_exc.bin
-vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
@@ -861,11 +860,6 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-
-# NFC (SLSI)
-vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
-vendor/etc/nfc/sec_s3nrn4v_swreg.bin
-vendor/lib64/nfc_nci_sec.so
 
 # NPU
 vendor/bin/npu_launcher

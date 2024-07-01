@@ -291,12 +291,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
+    libchrome.vendor \
     Tag
-
-# NFC configs
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    $(COMMON_PATH)/configs/nfc/libnfc-nci-SLSI.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-SLSI.conf
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -414,7 +410,8 @@ PRODUCT_PACKAGES += \
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0.vendor \
-    libchrome.vendor
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
