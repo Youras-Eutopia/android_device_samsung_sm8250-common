@@ -283,9 +283,9 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    $(RELEASE_PACKAGE_NFC_STACK) \
     android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
-    libchrome.vendor \
     Tag
 
 # OMX
@@ -397,12 +397,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     secril_config_svc \
     sehradiomanager
-
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0.vendor \
-    android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
