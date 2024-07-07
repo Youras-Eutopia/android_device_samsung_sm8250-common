@@ -26,12 +26,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
-    fstab.ramplus \
     init.audio.samsung.rc \
     init.fingerprint.rc \
     init.nfc.samsung.rc \
     init.qcom.rc \
-    init.ramplus.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.eif.rc \
