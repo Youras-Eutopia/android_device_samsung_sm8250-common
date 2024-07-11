@@ -84,6 +84,12 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/configs/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest.xml
+ifeq (,$(filter gts7lwifi gts7xlwifi, $(PRODUCT_DEVICE)))
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest_radio.xml
+ifneq ($(PRODUCT_CHARACTERISTICS),tablet)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest_nfc.xml
+endif
+endif
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Include
@@ -147,6 +153,12 @@ TARGET_BOARD_PLATFORM := kona
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+ifeq (,$(filter gts7lwifi gts7xlwifi, $(PRODUCT_DEVICE)))
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_radio.prop
+ifneq ($(PRODUCT_CHARACTERISTICS),tablet)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_nfc.prop
+endif
+endif
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true

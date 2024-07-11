@@ -1,6 +1,4 @@
 # Audio
-aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
 aaudio.hw_burst_min_usec=2000
 af.fast_track_multiplier=1
 persist.vendor.audio.ambisonic.auto.profile=false
@@ -153,31 +151,11 @@ ro.hardware.keystore_desede=true
 # Media
 debug.stagefright.omx_default_rank=0
 
-# NFC
-ro.vendor.nfc.info.antpos=1
-ro.vendor.nfc.support.advancedsetting=false
-ro.vendor.nfc.support.autoselect=true
-ro.vendor.nfc.support.defaultaid=true
-ro.vendor.nfc.support.ese=true
-ro.vendor.nfc.support.nonaid=true
-ro.vendor.nfc.support.othercategory=true
-ro.vendor.nfc.support.uicc=true
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Power
 vendor.powerhal.disp.idle_support=false
-
-# RIL
-ro.radio.noril=no
-ro.telephony.default_cdma_sub=0
-ro.vendor.epdg.support=true
-ro.vendor.use_data_netmgrd=false
-ro.vendor.sec.radio.def_network=9
-persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.enableadvancedscan=true
-vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 
 # Wifi
 wifi.aware.interface=wifi-aware0
