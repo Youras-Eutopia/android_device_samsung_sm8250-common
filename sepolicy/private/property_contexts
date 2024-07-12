@@ -1,0 +1,3 @@
+# Bluetooth
+ro.rfkilldisabled                           u:object_r:rfkilldisabled_prop:s0
+sys.bluetooth.tty                           u:object_r:bluetooth_prop:s0

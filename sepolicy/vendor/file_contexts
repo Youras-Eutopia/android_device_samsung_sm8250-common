@@ -3,6 +3,10 @@
 /sys/class/cirrus/cirrus_cal(/.*)?                 u:object_r:sysfs_audio_writable:s0
 /sys/class/cirrus/cirrus_pwr(/.*)?                 u:object_r:sysfs_audio_writable:s0
 
+# Bluetooth
+/sys/devices/platform/soc/soc:bt_driver/rfkill/rfkill[0-9]+/state  --   u:object_r:sysfs_bluetooth_writable:s0
+/sys/devices/platform/soc/soc:bt_driver/rfkill/rfkill[0-9]+/type   --   u:object_r:sysfs_bluetooth_writable:s0
+
 # DATA
 /data/vendor/biometrics(/.*)?                u:object_r:biometrics_vendor_data_file:s0
 /data/vendor/conn(/.*)?                      u:object_r:conn_vendor_data_file:s0
