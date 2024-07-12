@@ -790,12 +790,6 @@ vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|42b247fc8066d045c299a1b4d25559419f14d61a
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
--system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # Keymaster
 -vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/sec_nvm
