@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
+    libaudioroute.vendor \
     libbundlewrapper \
     libdownmix \
     libdynproc \
@@ -69,7 +70,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     libgui_vendor \
-    libcamera2ndk_vendor
+    libcamera2ndk_vendor \
+    libpng.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -346,6 +348,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    libnetutils.vendor \
     libxml2 \
     librilutils \
     librmnetctl \
