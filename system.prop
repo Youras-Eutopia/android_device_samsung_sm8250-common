@@ -12,3 +12,6 @@ fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
 # Keystore
 ro.security.keystore.keytype=sakv2,gak,sgak
+
+# OEM Unlock
+ro.oem_unlock_supported=1
