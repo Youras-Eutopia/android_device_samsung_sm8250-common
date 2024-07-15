@@ -67,7 +67,6 @@ vendor/lib/libhfp.so
 vendor/lib/libmulawdec.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libqtigef.so
-vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
@@ -335,8 +334,6 @@ vendor/lib/libvideobeauty_interface.so
 vendor/lib/libvideotransitioneffect_roll.arcsoft.so
 vendor/lib/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib/libvideoutils.so
-vendor/lib/unihal_cutils@2.1.so
-vendor/lib/unihal_main@2.1.so
 vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
@@ -479,8 +476,6 @@ vendor/lib64/libvideobeauty.uniplugin@1.0.so
 vendor/lib64/libvideobeauty_interface.so
 vendor/lib64/libvideotransitioneffect_roll.arcsoft.so
 vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
-vendor/lib64/unihal_cutils@2.1.so
-vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
@@ -822,9 +817,11 @@ vendor/lib64/libmdmimgload.so
 # Machine learning
 vendor/lib/libpredeflicker_native.so
 vendor/lib/libsecfr_engine.so
+vendor/lib/libsecfr_model.so
 vendor/lib/libshotsuggestion_engines.so
 vendor/lib64/libreffeature.so
 vendor/lib64/libsecfr_engine.so
+vendor/lib64/libsecfr_model.so
 vendor/lib64/libshotsuggestion_engines.so
 
 # Media
@@ -835,10 +832,30 @@ vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libMpeghSwEnc.so
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxAlacDec.so
+vendor/lib/libOmxAlacDecSw.so
+vendor/lib/libOmxAmrDec.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxApeDec.so
+vendor/lib/libOmxApeDecSw.so
+vendor/lib/libOmxDsdDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxG711Dec.so
+vendor/lib/libOmxMpeghDecSw.so
+vendor/lib/libOmxMpeghEncSw.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxSwVdec.so
+vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxVpp.so
+vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmmosal.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
@@ -847,10 +864,28 @@ vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libMpeghSwEnc.so
+vendor/lib64/libOmxAacDec.so
+vendor/lib64/libOmxAlacDec.so
+vendor/lib64/libOmxAlacDecSw.so
+vendor/lib64/libOmxAmrDec.so
+vendor/lib64/libOmxAmrwbplusDec.so
+vendor/lib64/libOmxApeDec.so
+vendor/lib64/libOmxApeDecSw.so
+vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxG711Dec.so
+vendor/lib64/libOmxMpeghEncSw.so
+vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libOmxSwVdec.so
+vendor/lib64/libOmxSwVencMpeg4.so
+vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/libmmosal.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
@@ -905,7 +940,9 @@ vendor/lib/libdiagjni.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
+vendor/lib/libqdi.so
 vendor/lib/libqdp.so
+vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
@@ -919,7 +956,9 @@ vendor/lib64/libdiagjni.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
 vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
+vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
@@ -928,6 +967,8 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
+vendor/lib64/libqmiservices-ext.so
+vendor/lib64/libqmiservices-sem-ext.so
 vendor/lib64/libqmiservices.so
 
 # QTEE
@@ -943,6 +984,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/adpl
 vendor/bin/hw/rild
 vendor/bin/ipacm-diag
+vendor/bin/netmgrd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -958,8 +1000,14 @@ vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_se13.bin
 vendor/etc/sec_config
 vendor/etc/sec_config_oem
+vendor/lib/libconfigdb.so
+vendor/lib/libdsi_netctrl.so
 vendor/lib/libmdmdetect.so
+vendor/lib/libnetmgr.so
+vendor/lib/libnetmgr_common.so
 vendor/lib/liboemaids_vendor.so
+vendor/lib/libpdmapper.so
+vendor/lib/libpdnotifier.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
@@ -968,14 +1016,21 @@ vendor/lib/libsecril-client.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib64/libSemDataProps.so
 vendor/lib64/libSemTelephonyProps.so
+vendor/lib64/libconfigdb.so
+vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libmdmdetect.so
+vendor/lib64/libnetmgr.so
+vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/liboemaids_vendor.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril_sem.so
+vendor/lib64/libsec-ril.so|3298a4818e1a2a42aaef90ac8ae53a1c2ea8ce3a
 vendor/lib64/libsec_semRil.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libsystem_health_mon.so
@@ -1031,13 +1086,11 @@ vendor/lib/libsensorslog.so
 vendor/lib/libsns_registry_skel.so
 vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.flicker.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.flicker.so
 
 # SMC Invoke
 vendor/lib/libminkdescriptor.so
