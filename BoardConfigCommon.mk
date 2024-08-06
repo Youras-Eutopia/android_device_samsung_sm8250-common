@@ -71,11 +71,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 BOARD_ROOT_EXTRA_FOLDERS += \
     carrier \
     efs \
-    metadata \
-    misc \
-    omr \
-    optics \
-    prism \
     spu \
     dqmdbg
 
