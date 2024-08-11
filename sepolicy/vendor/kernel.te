@@ -1,9 +1,5 @@
 # kernel.te
 
-# /vendor/firmware/ & /vendor/firmware_mnt
-allow kernel { vendor_firmware_file vendor_fw_mnt }:dir r_dir_perms;
-allow kernel { vendor_firmware_file vendor_fw_mnt }:file r_file_perms;
-
 allow kernel block_device:blk_file { read write open };
 allow kernel block_device:dir search;
 
