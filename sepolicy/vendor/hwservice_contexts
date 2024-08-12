@@ -18,8 +18,5 @@ vendor.samsung.hardware.radio.bridge::ISehBridge                                
 vendor.samsung.hardware.radio::ISehRadio                                                    u:object_r:hal_telephony_hwservice:s0
 vendor.samsung.hardware.radio.channel::ISehChannel                                          u:object_r:hal_telephony_hwservice:s0
 
-# SecureElement
-android.hardware.secure_element::ISecureElement                                             u:object_r:hal_secure_element_hwservice:s0
-
 # Thermal
 vendor.samsung.hardware.thermal::ISehThermal                                                u:object_r:hal_thermal_samsung_hwservice:s0
