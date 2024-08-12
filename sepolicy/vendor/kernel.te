@@ -19,8 +19,5 @@ allow kernel app_efs_file:file { read open getattr };
 # /sys/devices/virtual/lcd/panel/
 allow kernel sysfs_lcd_writable:file r_file_perms;
 
-# debugfs
-allow kernel debugfs_mmc:dir search;
-
 # /spu
 allow kernel spu_file:dir search;

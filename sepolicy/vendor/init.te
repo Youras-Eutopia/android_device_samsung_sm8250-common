@@ -2,8 +2,5 @@
 
 allow init proc_last_kmsg:file setattr;
 
-# /sys/kernel/tracing
-allow init debugfs_tracing_debug:dir mounton;
-
 # root mounts
 allow init { efs_file spu_file carrier_file dqmdbg_file }:dir { mounton };
