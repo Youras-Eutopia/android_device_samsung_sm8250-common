@@ -151,7 +151,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 ifeq (,$(filter gts7lwifi gts7xlwifi, $(PRODUCT_DEVICE)))
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_radio.prop
 ifneq ($(PRODUCT_CHARACTERISTICS),tablet)
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_nfc.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
 endif
 endif
 
