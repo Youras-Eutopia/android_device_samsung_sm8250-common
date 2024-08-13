@@ -28,10 +28,10 @@ genfscon sysfs /class/input                                                     
 genfscon sysfs /class/sec/tsp                                                                               u:object_r:sysfs_sec_touchscreen:s0
 genfscon sysfs /class/sensor_event                                                                          u:object_r:sysfs_sensors:s0
 
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/cable.0/                          u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/cable.0/                          u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/name                              u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/name                              u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/cable.0/                          u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/cable.0/                          u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/name                              u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/name                              u:object_r:vendor_sysfs_graphics:s0
 
 genfscon sysfs /devices/virtual/input/                                                                      u:object_r:sysfs_input:s0
 genfscon sysfs /devices/virtual/lcd/panel/                                                                  u:object_r:sysfs_lcd_writable:s0
