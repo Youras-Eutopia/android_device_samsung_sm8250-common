@@ -182,6 +182,8 @@ Only the three quirks included above are recognized at this point:
 -->
 
 <MediaCodecs>
+    <Include href="media_codecs_google_audio.xml" />
+    <Include href="media_codecs_google_telephony.xml" />
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
@@ -295,6 +297,7 @@ Only the three quirks included above are recognized at this point:
              <Limit name="blocks-per-second" min="36" max="48600" />
              <Limit name="bitrate" range="1-8000000" />
              <Limit name="frame-rate" range="1-30" />
+             <Attribute name="software-codec" />
              <Limit name="concurrent-instances" max="3" />
              <Limit name="performance-point-720x576" value="25" />
              <Limit name="performance-point-720x480" value="30" />
@@ -338,7 +341,6 @@ Only the three quirks included above are recognized at this point:
             <Limit name="performance-point-3840x2160" value="60" />
             <Limit name="performance-point-4096x2304" value="60" />
         </MediaCodec>
-<!--
         <MediaCodec name="OMX.qcom.video.decoder.mpeg2" type="video/mpeg2" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -368,7 +370,6 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="3" />
             <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
--->
         <MediaCodec name="OMX.qcom.video.decoder.vp8" type="video/x-vnd.on2.vp8" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -485,8 +486,7 @@ Only the three quirks included above are recognized at this point:
              <Limit name="concurrent-instances" max="4" />
              <Limit name="performance-point-1920x1080" value="30" />
         </MediaCodec>
+        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
-    <Include href="media_codecs_google_audio.xml" />
-    <Include href="media_codecs_google_telephony.xml" />
 </MediaCodecs>
