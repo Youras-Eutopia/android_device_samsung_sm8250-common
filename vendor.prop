@@ -160,6 +160,17 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Power
 vendor.powerhal.disp.idle_support=false
 
+# USB
+sys.usb.mtp.batchcancel=1
+vendor.usb.diag.func.name=ffs
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=0
+
 # Wifi
 wifi.aware.interface=wifi-aware0
 
