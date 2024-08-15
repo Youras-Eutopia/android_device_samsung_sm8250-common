@@ -328,7 +328,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:$(TARGET_RECOVERY_ROOT_OUT)/init.recovery.qcom.rc
+    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
 # RIL
 ifeq (,$(filter gts7lwifi gts7xlwifi, $(PRODUCT_DEVICE)))
