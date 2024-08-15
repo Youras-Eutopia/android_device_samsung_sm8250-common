@@ -1,8 +1,5 @@
 # hal_power_default.te
 
-# /dev/cpu_dma_latency
-allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
-
 # /sys/class/input/
 allow hal_power_default sysfs_input:dir r_dir_perms;
 
