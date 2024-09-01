@@ -50,9 +50,6 @@
 /dev/tzirs                                      u:object_r:tz_device:s0
 
 # Sysfs nodes
-/sys/class/sec/tsp/input/enabled                                                                        u:object_r:sysfs_touchscreen_writable:s0
-/sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/input/input[0-9]+(/.*)?         u:object_r:sysfs_touchscreen_writable:s0
-
 /sys/devices/platform/soc/[a-f0-9]+(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?            u:object_r:sysfs_wakeup:s0
 /sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?         u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_[a-z0-9]+(_[a-z0-9]+)?/wakeup([0-9])+(/.*)?                 u:object_r:sysfs_wakeup:s0
