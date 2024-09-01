@@ -18,7 +18,6 @@ LOCAL_SRC_FILES    := etc/init.fingerprint.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
-ifneq ($(PRODUCT_CHARACTERISTICS),tablet)
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.nfc.samsung.rc
 LOCAL_MODULE_TAGS  := optional
@@ -26,7 +25,6 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/init.nfc.samsung.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
-endif
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.rc
@@ -84,7 +82,6 @@ LOCAL_SRC_FILES    := etc/init.qcom.usb.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
-ifeq (,$(filter gts7lwifi gts7xlwifi, $(PRODUCT_DEVICE)))
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.vendor.onebinary.rc
 LOCAL_MODULE_TAGS  := optional
@@ -108,7 +105,6 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/init.vendor.rilcommon.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
-endif
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.vendor.sensors.rc
