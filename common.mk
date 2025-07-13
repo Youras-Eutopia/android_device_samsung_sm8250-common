@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     init.vendor.onebinary.rc \
     init.vendor.sensors.rc \
     ueventd.qcom.rc \
-    wifi_qcom.rc \
     wifi_sec.rc
 
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
@@ -362,20 +361,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
-    libwifi-hal-ctrl \
     WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    firmware_WCNSS_qcom_cfg.ini_symlink \
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
-    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

@@ -129,13 +129,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "wifi_qcom.rc",
-    src: "wifi_qcom.rc",
-    sub_dir: "init",
-    soc_specific: true,
-}
-
-prebuilt_etc {
     name: "wifi_sec.rc",
     src: "wifi_sec.rc",
     sub_dir: "init",
