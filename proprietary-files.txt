@@ -32,8 +32,8 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/etc/audio_tuning_mixer.txt
 vendor/etc/dolby/dax-default.xml
+vendor/etc/audio_tuning_mixer.txt
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/lib_SamsungRec_07020.so
@@ -192,11 +192,11 @@ vendor/etc/charger_fstab.qti
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
@@ -532,10 +532,10 @@ vendor/lib64/libSemTelephonyProps.so|5c7ffb25462b4623998a294aa7dff8729945e36f
 vendor/lib64/libnetmgr.so|bcc70fca8c603ebf2b9c6e87906d4263a0b413b7
 vendor/lib64/libnetmgr_common.so|602f2edadd7ebbc6436898ba160cde3571b456c0
 vendor/lib64/libnetmgr_datapath_proxy.so|bb39793db6a940c3859c61672e672d9aeeed311d
-vendor/lib64/libnetmgrmodemproxy.so|2ed0d9e5d52eca398a529ff389c7773fb84d9ce1
-vendor/lib64/libnetmgrportutils.so|563a7a7e75a3f12ecfed4645bd302dd9921d2303
 vendor/lib64/libnetmgr_sscm3.so|1123d54b9a0afaa74b0cccc4d6431d3e46c66876
 vendor/lib64/libnetmgr_utils.so|a17673e0c2af399988a968eafdc0208933ab26fb
+vendor/lib64/libnetmgrmodemproxy.so|2ed0d9e5d52eca398a529ff389c7773fb84d9ce1
+vendor/lib64/libnetmgrportutils.so|563a7a7e75a3f12ecfed4645bd302dd9921d2303
 vendor/lib64/libnetmgrxfrmutils.so|ef639590f41739ad70180484533e592fa76a5d2c
 vendor/lib64/libnlnetmgr.so|c53116f943cd4b557a27571695ef4db6442814c5
 vendor/lib64/libril_sem.so|8f20c6dd8d2b8537b50052b7bbf416d1843f4677
@@ -597,8 +597,8 @@ vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/thermal-engine.conf
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/etc/thermal-engine.conf
 vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
@@ -622,9 +622,9 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 
 # WiFi
